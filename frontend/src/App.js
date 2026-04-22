@@ -1,47 +1,51 @@
-import React, { useState, useEffect } from "react";
-import io from "socket.io-client";
-
-const socket = io("http://localhost:5000");
+import React, { useState } from "react";
 
 function App() {
-  const [message, setMessage] = useState("");
-  const [chat, setChat] = useState([]);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLogin, setIsLogin] = useState(true);
 
-  useEffect(() => {
-    socket.on("receiveMessage", (data) => {
-      setChat((prev) => [...prev, data]);
+  const handleSubmit = async () => {
+    const url = isLogin
+      ? "http://localhost:5001/login"
+      : "http://localhost:5001/register";
+
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username, password }),
     });
-  }, []);
 
-  const sendMessage = () => {
-    if (message.trim() !== "") {
-      socket.emit("sendMessage", message);
-      setMessage("");
-    }
+    const data = await res.json();
+    alert(data.message);
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>Chat App</h2>
-
-      <div style={{
-        border: "1px solid black",
-        height: "200px",
-        overflowY: "scroll",
-        marginBottom: "10px"
-      }}>
-        {chat.map((msg, index) => (
-          <p key={index}>{msg}</p>
-        ))}
-      </div>
+    <div style={{ textAlign: "center", marginTop: "100px" }}>
+      <h2>{isLogin ? "Login" : "Register"}</h2>
 
       <input
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Type message..."
+        placeholder="Username"
+        onChange={(e) => setUsername(e.target.value)}
       />
+      <br /><br />
 
-      <button onClick={sendMessage}>Send</button>
+      <input
+        placeholder="Password"
+        type="password"
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <br /><br />
+
+      <button onClick={handleSubmit}>
+        {isLogin ? "Login" : "Register"}
+      </button>
+
+      <p onClick={() => setIsLogin(!isLogin)} style={{ cursor: "pointer" }}>
+        {isLogin ? "Create account" : "Already have account?"}
+      </p>
     </div>
   );
 }

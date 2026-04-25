@@ -62,10 +62,6 @@ npm start
 👉 frontend run  
 👉 browser  screenshot  
 
-Create folder:
-
-``` id="img1"
-screenshots/
 
 ## ▶️ How to Run Locally
 

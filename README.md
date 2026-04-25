@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# chat-app
-=======
+
 # 💬 Real-Time Chat App (MERN + Socket.io)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -48,10 +46,10 @@ npm start
 
 ---
 
-# 📸 3. Screenshots add کریں (VERY IMPORTANT)
+# 📸 3. Screenshots add  
 
-👉 frontend run کریں  
-👉 browser سے screenshot لیں  
+👉 frontend run  
+👉 browser  screenshot  
 
 Create folder:
 

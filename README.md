@@ -7,6 +7,13 @@
 ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101)
 ![GitHub stars](https://img.shields.io/github/stars/numan-ai-engineer/chat-app)
 ![GitHub forks](https://img.shields.io/github/forks/numan-ai-engineer/chat-app)
+# 🚀 Project Status
+
+![GitHub repo size](https://img.shields.io/github/repo-size/numan-ai-engineer/chat-app)
+![GitHub stars](https://img.shields.io/github/stars/numan-ai-engineer/chat-app)
+![GitHub forks](https://img.shields.io/github/forks/numan-ai-engineer/chat-app)
+![GitHub issues](https://img.shields.io/github/issues/numan-ai-engineer/chat-app)
+![GitHub last commit](https://img.shields.io/github/last-commit/numan-ai-engineer/chat-app)
 
 A real-time chat application built using **MERN Stack + Socket.io**.  
 This project supports instant messaging between multiple users.

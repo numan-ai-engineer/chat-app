@@ -1,5 +1,11 @@
 
 # 💬 Real-Time Chat App (MERN + Socket.io)
+![GitHub repo size](https://img.shields.io/github/repo-size/numan-ai-engineer/chat-app)
+![GitHub stars](https://img.shields.io/github/stars/numan-ai-engineer/chat-app)
+![GitHub forks](https://img.shields.io/github/forks/numan-ai-engineer/chat-app)
+![GitHub issues](https://img.shields.io/github/issues/numan-ai-engineer/chat-app)
+![GitHub last commit](https://img.shields.io/github/last-commit/numan-ai-engineer/chat-app)
+
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
@@ -8,11 +14,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/numan-ai-engineer/chat-app)
 ![GitHub forks](https://img.shields.io/github/forks/numan-ai-engineer/chat-app)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/numan-ai-engineer/chat-app)
-![GitHub stars](https://img.shields.io/github/stars/numan-ai-engineer/chat-app)
-![GitHub forks](https://img.shields.io/github/forks/numan-ai-engineer/chat-app)
-![GitHub issues](https://img.shields.io/github/issues/numan-ai-engineer/chat-app)
-![GitHub last commit](https://img.shields.io/github/last-commit/numan-ai-engineer/chat-app)
+
 
 A real-time chat application built using **MERN Stack + Socket.io**.  
 This project supports instant messaging between multiple users.
